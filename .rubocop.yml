@@ -1,0 +1,33 @@
+AllCops:
+  Excludes:
+    - db/**
+    - config/**
+    - script/**
+
+Documentation:
+  Enabled: false
+
+#Style/StringLiterals:
+#  EnforcedStyle: double_quotes
+#  Enabled: false
+
+Style/HashSyntax:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+
+Metrics/MethodLength:
+  CountComments: false
+  Max: 10
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
